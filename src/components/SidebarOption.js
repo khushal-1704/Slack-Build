@@ -1,19 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+import { db } from '../firebase';
 
 function SidebarOption({ Icon, title, rotate, addChannelOption }) {
 
-    const addChannel = () => {
 
-    }
-
-    const selectChannel = () => {
-
-    }
 
     return (
         <SidebarOptionContainer
-            onClick={addChannelOption ? addChannel : selectChannel}
+
         >
             {Icon && <Icon fontSize="small" styled={{ padding: '10px' }} />}
             {Icon ? (
