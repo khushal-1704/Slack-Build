@@ -38,7 +38,7 @@ function Sidebar() {
             <hr />
             <SidebarOption Icon={ExpandMoreIcon} title='Channels' />
             <hr />
-            <SidebarOption Icon={AddIcon} title='Add Channels' rotate />
+            <SidebarOption Icon={AddIcon} title='Add Channels' rotate addChannelOption />
         </SidebarContainer>
     )
 }

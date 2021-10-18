@@ -8,22 +8,26 @@ import {
 import Header from './components/Header';
 import styled from 'styled-components';
 import Sidebar from './components/Sidebar';
+import Chat from './components/Chat';
+import Login from './components/Login';
+import Bottom from './components/Bottom';
 
 function App() {
   return (
     <div className="app">
       <Router>
         <>
-          <Header />
-          <AppBody>
-            <Sidebar />
-            <Switch>
-              <Route path="/" exact>
-                {/* Chat */}
-
-              </Route>
-            </Switch>
-          </AppBody>
+          <Switch>
+            <Route path='/' exact>
+              <Login />
+            </Route>
+            <Route path='/home'>
+              <AppBody>
+                <Header />
+                <Bottom />
+              </AppBody>
+            </Route>
+          </Switch>
         </>
       </Router>
     </div>
@@ -36,4 +40,6 @@ const AppBody = styled.div`
 display: flex;
 height: 100vh;
 `
+
+
 
